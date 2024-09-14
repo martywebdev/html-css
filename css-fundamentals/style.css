@@ -1,5 +1,10 @@
-h1, h2, h3, h4, p, li {
-    font-family: sans-serif;
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
 }
 
 h1 {
@@ -29,14 +34,35 @@ p {
 }
 
 li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-footer p {
-    font-size: 16px;
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article footer p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
 }
 
+#copyright {
+  font-size: 16px;
+}
 
-article footer p {
-    font-style: italic;
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+.related {
+  list-style-type: none;
 }

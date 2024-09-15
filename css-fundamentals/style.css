@@ -1,4 +1,14 @@
-h1,
+/* universal selector */ 
+* {
+  
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+/* h1,
 h2,
 h3,
 h4,
@@ -6,7 +16,7 @@ p,
 li {
   font-family: sans-serif;
   color: #444;
-}
+} */
 
 h1,
 h2,
@@ -118,4 +128,12 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+nav a:link {
+  font-size: 18px;
+}
+
+nav {
+  font-size: 18px;
 }

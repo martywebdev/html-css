@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converse</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family: sans-serif;
         line-height: 1.4;
       }
 
       .product {
+        margin: 50px auto;
+        width: 825px;
         border: 5px solid black;
       }
 
       .product-title {
         background-color: #999;
         text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        padding: 15px;
       }
 
       .details-title {
         text-transform: uppercase;
+        margin-bottom: 15px;
+        font-size: 16px;
+        margin-top: 30px;
       }
 
       .price {
@@ -32,6 +45,7 @@
         font-size: 12px;
         font-weight: bold;
         color: #777;
+        margin-bottom: 20px;
       }
 
       .more-info:link .more-info:visited {
@@ -45,6 +59,11 @@
 
       .details-list {
         list-style-type: square;
+        margin-left: 20px;
+      }
+
+      .details-list li {
+        margin-bottom: 10px;
       }
 
       .add-cart {
@@ -54,36 +73,40 @@
         border: none;
         font-size: 20px;
         cursor: pointer;
+        width: 100%;
+        padding: 15px;
+        border-top: 4px solid black;
       }
 
       .add-cart:hover {
         background-color: white;
         color: #000;
-        border: 1px solid black;
       }
     </style>
   </head>
   <body>
-    <article class="product">
-      <h2 class="product-title">Converse Chuck Taylor</h2>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO782_GrW4b_-G0RQWtpgU648hY9E-9lY_mQ&s"
-        alt="Chuck Taylor"
-      />
-      <p class="price"><strong>$65.00</strong></p>
-      <p class="shipping">Free shipping</p>
-      <p>
-        Ready to dress up or down, these classic canvas Chucks are an everyday
-        wardrobe staple.
-      </p>
-      <a href="#" class="more-info">More information &#8594; </a>
-      <h3 class="details-title">Product Details</h3>
-      <ul class="details-list">
-        <li>Lightweight, durable canvas sneaker</li>
-        <li>Lightweight, durable canvas sneaker</li>
-        <li>Lightweight, durable canvas sneaker</li>
-      </ul>
-      <button class="add-cart">Add to Cart</button>
-    </article>
+    <div class="container">
+      <article class="product">
+        <h2 class="product-title">Converse Chuck Taylor</h2>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO782_GrW4b_-G0RQWtpgU648hY9E-9lY_mQ&s"
+          alt="Chuck Taylor"
+        />
+        <p class="price"><strong>$65.00</strong></p>
+        <p class="shipping">Free shipping</p>
+        <p>
+          Ready to dress up or down, these classic canvas Chucks are an everyday
+          wardrobe staple.
+        </p>
+        <a href="#" class="more-info">More information &#8594; </a>
+        <h3 class="details-title">Product Details</h3>
+        <ul class="details-list">
+          <li>Lightweight, durable canvas sneaker</li>
+          <li>Lightweight, durable canvas sneaker</li>
+          <li>Lightweight, durable canvas sneaker</li>
+        </ul>
+        <button class="add-cart">Add to Cart</button>
+      </article>
+    </div>
   </body>
 </html>

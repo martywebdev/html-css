@@ -4,24 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converse</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.4;
+      }
+
+      .product {
+        border: 5px solid black;
+      }
+
+      .product-title {
+        background-color: #999;
+        text-align: center;
+      }
+
+      .details-title {
+        text-transform: uppercase;
+      }
+
+      .price {
+        font-size: 24px;
+      }
+
+      .shipping {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color: #777;
+      }
+
+      .more-info:link .more-info:visited {
+        color: black;
+      }
+
+      .more-info:hover,
+      .more-info:active {
+        text-decoration: none;
+      }
+
+      .details-list {
+        list-style-type: square;
+      }
+
+      .add-cart {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .add-cart:hover {
+        background-color: white;
+        color: #000;
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
-    <article>
-      <h2>Converse Chuck Taylor</h2>
+    <article class="product">
+      <h2 class="product-title">Converse Chuck Taylor</h2>
       <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO782_GrW4b_-G0RQWtpgU648hY9E-9lY_mQ&s"
-      alt="Chuck Taylor"/>
-      <p><strong>$65.00</strong></p>
-      <p>Free shipping</p>
-      <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.</p>
-      <a href="#">More information &#8594; </a>
-      <h3>Product Details</h3>
-      <ul>
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO782_GrW4b_-G0RQWtpgU648hY9E-9lY_mQ&s"
+        alt="Chuck Taylor"
+      />
+      <p class="price"><strong>$65.00</strong></p>
+      <p class="shipping">Free shipping</p>
+      <p>
+        Ready to dress up or down, these classic canvas Chucks are an everyday
+        wardrobe staple.
+      </p>
+      <a href="#" class="more-info">More information &#8594; </a>
+      <h3 class="details-title">Product Details</h3>
+      <ul class="details-list">
         <li>Lightweight, durable canvas sneaker</li>
         <li>Lightweight, durable canvas sneaker</li>
         <li>Lightweight, durable canvas sneaker</li>
       </ul>
-      <button>Add to Cart</button>
+      <button class="add-cart">Add to Cart</button>
     </article>
   </body>
 </html>

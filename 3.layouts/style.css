@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   color: #444;
   position: relative;
+  border-top: 10px solid #1098ad ;
 }
 
 .container {
@@ -233,8 +234,20 @@ h2::after {
 /* FLOATS */
 .author-img {
   float: left;
+  margin-bottom: 20px;
 }
 
 .author {
   /* padding-left: 80px; */
+  padding-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav { 
+  float: right;
 }

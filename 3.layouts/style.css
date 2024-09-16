@@ -10,18 +10,17 @@ body {
   font-family: sans-serif;
   color: #444;
   position: relative;
-  border-top: 10px solid #1098ad ;
+  border-top: 10px solid #1098ad;
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   /* position: relative; */
 }
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
@@ -172,7 +171,6 @@ a:active {
   height: auto;
 }
 
-
 nav a:link {
   /* background-color: orangered;
   margin: 20px;
@@ -239,7 +237,6 @@ h2::after {
 }
 
 .author {
-  /* padding-left: 80px; */
   padding-top: 10px;
   margin-left: 20px;
   float: left;
@@ -249,16 +246,26 @@ h1 {
   float: left;
 }
 
-nav { 
+nav {
   float: right;
 }
 
-/* .clear {
-  clear: both;
-} */
-
 .main-header::after {
-  content: '';
+  content: "";
   display: block;
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
   clear: both;
 }

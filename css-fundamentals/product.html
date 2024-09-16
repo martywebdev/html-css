@@ -19,6 +19,7 @@
         margin: 50px auto;
         width: 825px;
         border: 5px solid black;
+        position: relative;
       }
 
       .product-title {
@@ -46,6 +47,20 @@
         font-weight: bold;
         color: #777;
         margin-bottom: 20px;
+      }
+
+      .sale {
+        background-color: red;
+        color: #fff;
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        display: inline-block;
+        top: -20px;
+        left: -40px;
+        letter-spacing: 2px;
       }
 
       .more-info:link .more-info:visited {
@@ -82,6 +97,39 @@
         background-color: white;
         color: #000;
       }
+
+      .colors {
+        margin-top: 40px;
+      }
+
+      .color {
+        background-color: #000;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+
+      .color-blue {
+        background-color: blue;
+      }
+
+      .color-red {
+        background-color: red;
+      }
+
+      .color-yellow {
+        background-color: yellow;
+      }
+
+      .color-green {
+        background-color: green;
+      }
+
+      .color-brown {
+        background-color: brown;
+      }
     </style>
   </head>
   <body>
@@ -94,11 +142,20 @@
         />
         <p class="price"><strong>$65.00</strong></p>
         <p class="shipping">Free shipping</p>
+        <p class="sale">Sale</p>
         <p>
           Ready to dress up or down, these classic canvas Chucks are an everyday
           wardrobe staple.
         </p>
-        <a href="#" class="more-info">More information &#8594; </a>
+        <a href="#" class="more-info">More information &#8594;</a>
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color color-blue"></div>
+          <div class="color color-red"></div>
+          <div class="color color-yellow"></div>
+          <div class="color color-green"></div>
+          <div class="color color-brown"></div>
+        </div>
         <h3 class="details-title">Product Details</h3>
         <ul class="details-list">
           <li>Lightweight, durable canvas sneaker</li>

@@ -41,11 +41,16 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 250px 150px 250px 150px;
-        grid-template-rows: 300px 200px;
+        /* grid-template-columns: 3fr repeat(2, 1fr) auto; */
+        /* grid-template-rows: 300px 200px; */
+        grid-template-columns: 3fr repeat(2, 1fr) auto;
+        grid-template-rows: 1fr 1fr;
+        height: 600px;
         /* gap: 30px; */
         column-gap: 30px;
         row-gap: 60px;
+        /* justify-content: center; */
+        
       }
 
       .container--2 {

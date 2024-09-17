@@ -18,12 +18,13 @@ body {
   width: 1200px;
   margin: 0 auto;
   /* position: relative; */
+  row-gap: 60px;
 }
 
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -271,7 +272,6 @@ footer {
   clear: both;
 } */
 
-
 /* flexbox */
 
 .main-header {
@@ -312,8 +312,8 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
-
-.row {
+/* flexbox layout */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -327,5 +327,26 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
   
+}
+
+footer {
+  grid-column: 1 / -1;
 }
